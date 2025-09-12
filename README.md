@@ -1,6 +1,5 @@
 # Blender with Extension support
----
-This flake provides support for blenders extensions in home-manager. Do note that this flake currently only supports a few extensions, but I'll add more them bit by bit
+This flake provides support for blender's extensions in home-manager. Do note that this flake currently only supports a few extensions, but I'll add more them bit by bit
 
 ## Usage
 Add this to your flake inputs
