@@ -9,6 +9,6 @@
   };
 
   outputs = inputs @ { self, nixpkgs, home-manager, ...  }: {
-    homeModules = import ./src/default.nix;
+    homeModules.blender-extensions = import ./src/default.nix;
   };
 }
