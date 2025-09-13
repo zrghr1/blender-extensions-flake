@@ -4,7 +4,7 @@ let
   repo =  pkgs.fetchgit {
     url = "https://projects.blender.org/extensions/io_anim_nuke_chan.git";
     rev = "954b95fd350724d8ae339a54da560497f3c091ca";
-    sha256 = "954b95fd350724d8ae339a54da560497f3c091ca";
+    sha256 = "0j529h5mnzmc401v2asnzpgnsavvxz3kr819lxh07fx1cixpk4gz";
   };
   package = pkgs.runCommand "blender-extension-${name}" {} ''
     mkdir -p $out
