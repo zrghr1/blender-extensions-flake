@@ -29,6 +29,11 @@ in
 {
   options.programs.blender = {
     enable = lib.mkEnableOption "Enable Blender";
+    autoEnableExtensions = lib.mkOption {
+      type = lib.types.bool;
+      default = true;
+      description = "Automatically enable extensions in Blender";
+    };
     package = lib.mkOption {
       type = lib.types.package;
       default = pkgs.blender;
@@ -47,8 +52,8 @@ in
   config = lib.mkIf config.programs.blender.enable {
     home.packages = [ blenderPackage ];
     home.file."${blenderConfigDir}".source = blenderExtensionDir;
-    home.activation.applyBlenderPrefs = lib.hm.dag.entryAfter [ "writeBoundary" ] ''
+    home.activation.applyBlenderPrefs = lib.mkIf config.programs.blender.autoEnableExtensions (lib.hm.dag.entryAfter [ "writeBoundary" ] ''
       ${pkgs.blender}/bin/blender --background --factory-startup --python '${pythonScript}'
-    '';
+    '');
   };
 }
