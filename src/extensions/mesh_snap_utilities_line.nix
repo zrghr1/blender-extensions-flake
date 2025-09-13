@@ -4,7 +4,7 @@ let
   repo =  pkgs.fetchgit {
     url = "https://projects.blender.org/extensions/mesh_snap_utilities_line.git";
     rev = "27f311cef13bda28feda09a0e012088fa64c4ece";
-    sha256 = "27f311cef13bda28feda09a0e012088fa64c4ece";
+    sha256 = "12wn4siqvq4s18wrk9c0vfljig981yar5k4dhidkx3zzz2f5h9qw";
   };
   package = pkgs.runCommand "blender-extension-${name}" {} ''
     mkdir -p $out
