@@ -4,7 +4,7 @@ let
   repo =  pkgs.fetchgit {
     url = "https://projects.blender.org/extensions/blender_id.git";
     rev = "51eee9397801792636fba1447de40a44dceaa7bb";
-    sha256 = "51eee9397801792636fba1447de40a44dceaa7bb";
+    sha256 = "0gqra7yk6r88fil48hi05qgywgiacv15l64nhngfvmy9gnbyrw06";
   };
   package = pkgs.runCommand "blender-extension-${name}" {} ''
     mkdir -p $out
