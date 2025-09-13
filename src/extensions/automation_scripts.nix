@@ -4,7 +4,7 @@ let
   repo =  pkgs.fetchgit {
     url = "https://projects.blender.org/extensions/automation_scripts.git";
     rev = "7da732433b41cbf46fea4cbe7ce14acf2eb889e4";
-    sha256 = "7da732433b41cbf46fea4cbe7ce14acf2eb889e4";
+    sha256 = "0jwzy99y9qsyl3fzjd6n1721byq6mixffhhia1ij9jd32xpv8rdc";
   };
   package = pkgs.runCommand "blender-extension-${name}" {} ''
     mkdir -p $out
