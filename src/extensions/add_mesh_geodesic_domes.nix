@@ -4,7 +4,7 @@ let
   repo =  pkgs.fetchgit {
     url = "https://projects.blender.org/extensions/add_mesh_geodesic_domes.git";
     rev = "fe98588e0a489172ed47c164ffca2c5cb110fcb9";
-    sha256 = "fe98588e0a489172ed47c164ffca2c5cb110fcb9";
+    sha256 = "1mpvchvk9bvx5dvrfs3hhz156lg8xbspmx4rrfspmf87bjhvzgik";
   };
   package = pkgs.runCommand "blender-extension-${name}" {} ''
     mkdir -p $out
