@@ -51,7 +51,7 @@ echo "Writing file..."
 
 echo "$NIX_FILE" > "$OUTPUT_FILE"
 
-exec git add "${OUTPUT_FILE}"
-exec git commit -m "Add ${NAME}"
+git add "${OUTPUT_FILE}"
+git commit -m "Add ${NAME}"
 
 echo "Done!"

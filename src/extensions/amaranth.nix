@@ -1,0 +1,19 @@
+{ lib, pkgs }:
+let
+  name = "amaranth";
+  repo =  pkgs.fetchgit {
+    url = "https://projects.blender.org/extensions/${name}.git";
+    rev = "f3dcf92d365f34cd9fdb09763fc2edf1d091107d";
+    sha256 = "f3dcf92d365f34cd9fdb09763fc2edf1d091107d";
+  };
+  package = pkgs.runCommand "blender-extension-${name}" {} ''
+    mkdir -p $out
+    cp -r ${repo}/source $out/${name}
+  '';
+in
+{
+  inherit name package;
+  toPython = ''
+    bpy.ops.preferences.addon_enable(module="bl_ext.user_default.${name}")
+  '';
+}
