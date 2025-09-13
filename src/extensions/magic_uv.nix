@@ -4,7 +4,7 @@ let
   repo =  pkgs.fetchgit {
     url = "https://projects.blender.org/extensions/magic_uv.git";
     rev = "269480450448ddf765185ca26cc1fdcb0ef28ba9";
-    sha256 = "269480450448ddf765185ca26cc1fdcb0ef28ba9";
+    sha256 = "1ra53fs1mijh04yngag1m9wd89j893ash1k8mjwi0cpcfxnnzhzn";
   };
   package = pkgs.runCommand "blender-extension-${name}" {} ''
     mkdir -p $out
