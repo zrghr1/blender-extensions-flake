@@ -4,7 +4,7 @@ let
   repo =  pkgs.fetchgit {
     url = "https://projects.blender.org/extensions/animation_add_corrective_shape_key.git";
     rev = "edcf6d943589ab9cc2a3c59a66480a090606c56d";
-    sha256 = "edcf6d943589ab9cc2a3c59a66480a090606c56d";
+    sha256 = "1via5m57rdk9gjp205jp5jah92zr51whqymh2ypbc02s3vrmi1r9";
   };
   package = pkgs.runCommand "blender-extension-${name}" {} ''
     mkdir -p $out
