@@ -4,7 +4,7 @@ let
   repo =  pkgs.fetchgit {
     url = "https://projects.blender.org/extensions/io_import_dxf.git";
     rev = "fe53f891b814d6172eabc33c0aad2f02b1698718";
-    sha256 = "fe53f891b814d6172eabc33c0aad2f02b1698718";
+    sha256 = "1cps73dnl05mvi39csmahhyx107q5hbp55dn2hkp5hri5g4azzxs";
   };
   package = pkgs.runCommand "blender-extension-${name}" {} ''
     mkdir -p $out
