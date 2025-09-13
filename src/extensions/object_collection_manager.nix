@@ -2,7 +2,7 @@
 let
   name = "object_collection_manager";
   repo =  pkgs.fetchgit {
-    url = "https://projects.blender.org/extensions/object_collection_manager.git";
+    url = "https://projects.blender.org/extensions/${name}.git";
     rev = "fd55d530c92b9a4f270533ee8534fd31215949a5";
     sha256 = "0x74qh285gk29d92v65wnzyayqpfq0mv1z1xrxwcgr8p75bl3f3x";
   };

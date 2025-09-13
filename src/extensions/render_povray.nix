@@ -1,7 +1,6 @@
 { lib, pkgs }:
 let
   name = "render_povray";
-  version = "2.9.0";
   repo =  pkgs.fetchgit {
     url = "https://projects.blender.org/extensions/${name}.git";
     rev = "3ade27345478bc96191e74f5827b45fe746d06f1";

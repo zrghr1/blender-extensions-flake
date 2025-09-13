@@ -2,7 +2,7 @@
 let
   name = "mesh_looptools";
   repo =  pkgs.fetchgit {
-    url = "https://projects.blender.org/extensions/mesh_looptools";
+    url = "https://projects.blender.org/extensions/${name}.git";
     rev = "c6490da1eb0c33bec195daba2fb46e152fa54ff8";
     sha256 = "061ivmnmmr4561p8xb3jk2llcxssvd4sf0a74csqyjgfi4phx1n1";
   };
