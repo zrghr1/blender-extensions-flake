@@ -4,7 +4,7 @@ let
   repo =  pkgs.fetchgit {
     url = "https://projects.blender.org/extensions/add_curve_extra_objects.git";
     rev = "b1d368c78d817f48027e9ff734ba2c3781b336b3";
-    sha256 = "b1d368c78d817f48027e9ff734ba2c3781b336b3";
+    sha256 = "0b3050ccd85cyh4gb0a4lw5r4zlvmal5hrlpq4qfr1lx5japghl4";
   };
   package = pkgs.runCommand "blender-extension-${name}" {} ''
     mkdir -p $out
