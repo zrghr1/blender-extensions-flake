@@ -4,7 +4,7 @@ let
   repo =  pkgs.fetchgit {
     url = "https://projects.blender.org/extensions/render_freestyle_svg.git";
     rev = "869a352ad658cefb298518ece0a9c221362e4471";
-    sha256 = "869a352ad658cefb298518ece0a9c221362e4471";
+    sha256 = "0vffrilfh2gb36knpcl128xxss901rqwl2mvaxrggsb7z86b6aga";
   };
   package = pkgs.runCommand "blender-extension-${name}" {} ''
     mkdir -p $out
