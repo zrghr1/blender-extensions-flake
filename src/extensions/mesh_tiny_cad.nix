@@ -4,7 +4,7 @@ let
   repo =  pkgs.fetchgit {
     url = "https://projects.blender.org/extensions/mesh_tiny_cad.git";
     rev = "e6b06771e5a8742ac29b32742ad8a6c4223f3ac5";
-    sha256 = "e6b06771e5a8742ac29b32742ad8a6c4223f3ac5";
+    sha256 = "1jg646z6zkrfrhv6wvsj7h191svi4j8wky80n8y80q4cs7kp05a9";
   };
   package = pkgs.runCommand "blender-extension-${name}" {} ''
     mkdir -p $out
