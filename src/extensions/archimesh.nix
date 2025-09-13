@@ -4,7 +4,7 @@ let
   repo =  pkgs.fetchgit {
     url = "https://projects.blender.org/extensions/archimesh.git";
     rev = "99dfe7dda39a3503fb776a5aa80b9e4dc48c3e55";
-    sha256 = "99dfe7dda39a3503fb776a5aa80b9e4dc48c3e55";
+    sha256 = "13fqmfzqr0bv775rqyzp4kqk0wc2xcgx65603g5dzgdb846msbmn";
   };
   package = pkgs.runCommand "blender-extension-${name}" {} ''
     mkdir -p $out
