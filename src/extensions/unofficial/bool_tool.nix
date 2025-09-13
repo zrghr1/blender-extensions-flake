@@ -1,7 +1,7 @@
 { lib, pkgs }:
 let
   name = "btrace";
-  repo =  pkgs.fetchFromGithub {
+  repo =  pkgs.fetchFromGitHub {
     owner = "nickberckley";
     repo = "bool_tool";
     rev = "8461e5b7ccd4d2301c5567de9d17102304e2edbe";
