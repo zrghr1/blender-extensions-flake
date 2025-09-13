@@ -4,7 +4,7 @@ let
   repo =  pkgs.fetchgit {
     url = "https://projects.blender.org/extensions/curve_tools.git";
     rev = "6a8882d7e209a1b443ea4554c3a958a1d37bef36";
-    sha256 = "6a8882d7e209a1b443ea4554c3a958a1d37bef36";
+    sha256 = "0z50qay4csmd0zbr3sj8528d4vdkxq6kq582cihcgxa4bph5vcli";
   };
   package = pkgs.runCommand "blender-extension-${name}" {} ''
     mkdir -p $out
