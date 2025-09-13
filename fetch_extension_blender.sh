@@ -23,7 +23,7 @@ NIX_TEMPLATE=$(cat << 'EOF'
 let
   name = "@@NAME@@";
   repo =  pkgs.fetchgit {
-    url = "https://projects.blender.org/extensions/${name}.git";
+    url = "https://projects.blender.org/extensions/@@NAME@@.git";
     rev = "@@FULLREV@@";
     sha256 = "@@SHA256@@";
   };
