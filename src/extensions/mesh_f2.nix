@@ -4,7 +4,7 @@ let
   repo =  pkgs.fetchgit {
     url = "https://projects.blender.org/extensions/mesh_f2.git";
     rev = "5b416f9d278df11413866a67bdaa8550346d974e";
-    sha256 = "5b416f9d278df11413866a67bdaa8550346d974e";
+    sha256 = "0m411rgjd4imy28gldik84xzmbfih5fzbqf2vzxwiwwgfxy7g33f";
   };
   package = pkgs.runCommand "blender-extension-${name}" {} ''
     mkdir -p $out
