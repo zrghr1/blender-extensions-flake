@@ -4,7 +4,7 @@ let
   repo =  pkgs.fetchgit {
     url = "https://projects.blender.org/extensions/mesh_bsurfaces.git";
     rev = "687156d04a95e3ff6de77a7fc286f860e3e4226e";
-    sha256 = "687156d04a95e3ff6de77a7fc286f860e3e4226e";
+    sha256 = "05zpnwahhhyzic6c1658z7r97cqra684sfihashbjgh82crnhrj2";
   };
   package = pkgs.runCommand "blender-extension-${name}" {} ''
     mkdir -p $out
