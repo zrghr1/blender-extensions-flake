@@ -4,7 +4,7 @@ let
   repo =  pkgs.fetchgit {
     url = "https://projects.blender.org/extensions/space_view3d_brush_menus.git";
     rev = "34b28a1d4d9d3764d98ca1b2003ef4c96a39f5d0";
-    sha256 = "34b28a1d4d9d3764d98ca1b2003ef4c96a39f5d0";
+    sha256 = "1r0ll3jvdlqjczprxfacczw5qy13rkzg1dql4nwm3zblzblk2rli";
   };
   package = pkgs.runCommand "blender-extension-${name}" {} ''
     mkdir -p $out
