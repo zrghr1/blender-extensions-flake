@@ -3,7 +3,7 @@ let
   name = "bool_tool";
   repo =  pkgs.fetchFromGitHub {
     owner = "nickberckley";
-    repo = "${name}";
+    repo = "bool_tool";
     rev = "8461e5b7ccd4d2301c5567de9d17102304e2edbe";
     sha256 = "1fns2vh4gl23ivas3krjd7i9qwh3r8w6d25kbscrqnahj2vqllmf";
   };

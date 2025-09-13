@@ -3,7 +3,7 @@ let
   name = "nd";
   repo =  pkgs.fetchFromGitHub {
     owner = "hugemenace";
-    repo = "${name}";
+    repo = "nd";
     rev = "d38fc995091da89e5544f3fdb304f0bdd1026124";
     sha256 = "0m2bs9hijcsq8fqph9hii8rcb6riyvy5m94bmg4vhiv7f89k7yc6";
   };

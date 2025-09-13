@@ -3,7 +3,7 @@ let
   name = "simple_deform_helper";
   repo =  pkgs.fetchFromGitHub {
     owner = "AIGODLIKE";
-    repo = "${name}";
+    repo = "simple_deform_helper";
     rev = "2366929e68bbbce80c1dfb51959075dde316aa66";
     sha256 = "1bxfnr23lb9rvm2ylvkijcrj265pd41c7vsknvgfghxncd9aqmqp";
   };

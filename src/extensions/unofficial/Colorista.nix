@@ -3,7 +3,7 @@ let
   name = "Colorista";
   repo =  pkgs.fetchFromGitHub {
     owner = "AIGODLIKE";
-    repo = "${name}";
+    repo = "Colorista";
     rev = "27d7181aac4aac2beafc3115b6a89f128e691d08";
     sha256 = "16wb82isscx23yay3b7qgqq4n8zab1awdlqvvc9b7y9n9jy56k4g";
   };

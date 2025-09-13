@@ -3,7 +3,7 @@ let
   name = "PlaceHelper";
   repo =  pkgs.fetchFromGitHub {
     owner = "AIGODLIKE";
-    repo = "${name}";
+    repo = "PlaceHelper";
     rev = "b6603da8c841709c7053381def3b666a5ae1fda5";
     sha256 = "0jm0nbr2xd2czd0gn4psy9sppxpgmsqdyy28j7q3pnd9l316sxzi";
   };

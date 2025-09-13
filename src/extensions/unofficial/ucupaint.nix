@@ -3,7 +3,7 @@ let
   name = "ucupaint";
   repo =  pkgs.fetchFromGitHub {
     owner = "ucupumar";
-    repo = "${name}";
+    repo = "ucupaint";
     rev = "484edd6037ce781c0e1b5cf4599012a9f9121aa6";
     sha256 = "0s2c3f90j4y2p1km4r897ysj09ssxb3by0d1vkhgq6alp6ln3k7m";
   };

@@ -3,7 +3,7 @@ let
   name = "hot_node";
   repo =  pkgs.fetchFromGitHub {
     owner = "Trantor2098";
-    repo = "${name}";
+    repo = "hot_node";
     rev = "de39a53f6816ad7d2ad4a2cde48fb7c407fa4d6b";
     sha256 = "1q8pnygrf517iablv4ddr0a6h080ylkrzb6k2954hzksm3c7grxq";
   };

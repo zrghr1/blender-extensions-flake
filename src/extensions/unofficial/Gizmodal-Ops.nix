@@ -3,7 +3,7 @@ let
   name = "Gizmodal-Ops";
   repo =  pkgs.fetchFromGitHub {
     owner = "BlenderDefender";
-    repo = "${name}";
+    repo = "Gizmodal-Ops";
     rev = "12ad5b8e6d29d8e21cb7389ff3d7a437e851dedd";
     sha256 = "0rjk5b9jk301lghi3k7j0azjf08rb5gd21sq1afzd70qslmwdvv6";
   };

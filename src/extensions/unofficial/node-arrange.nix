@@ -3,7 +3,7 @@ let
   name = "node-arrange";
   repo =  pkgs.fetchFromGitHub {
     owner = "Leonardo-Pike-Excell";
-    repo = "${name}";
+    repo = "node-arrange";
     rev = "a3823f4418c040019127dabf221cca1cb95c1637";
     sha256 = "1455ymgfm3x4j11dbllfmm2wlq4897sk3izdrblap8br6201jw7j";
   };

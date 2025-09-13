@@ -3,7 +3,7 @@ let
   name = "RightMouseNavigation";
   repo =  pkgs.fetchFromGitHub {
     owner = "SpectralVectors";
-    repo = "${name}";
+    repo = "RightMouseNavigation";
     rev = "0f877eb3cbd37bd333ff45f7130922b1a935d669";
     sha256 = "163kjsl9smmjkixvkxx26wabm978gwds6dvv280b7ia0njyjkf7r";
   };

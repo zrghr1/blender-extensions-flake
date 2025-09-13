@@ -3,7 +3,7 @@ let
   name = "Screencast-Keys";
   repo =  pkgs.fetchFromGitHub {
     owner = "nutti";
-    repo = "${name}";
+    repo = "Screencast-Keys";
     rev = "36c2850e485d5a3c3b445e14b328a946d65a1374";
     sha256 = "0vvx6wn9xaz40nscy84rqxdap5bimllph33fh8idps1a9myvcc6j";
   };

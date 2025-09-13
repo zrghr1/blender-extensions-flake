@@ -3,7 +3,7 @@ let
   name = "node_pie";
   repo =  pkgs.fetchFromGitHub {
     owner = "strike-digital";
-    repo = "${name}";
+    repo = "node_pie";
     rev = "694a6484da444c7ba22df90b2a3596275db9c656";
     sha256 = "04ykfqhxxj3gsayd79nv0ja2v6b2fr4rd9q3cflm9lbixnvaz4qb";
   };

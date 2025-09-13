@@ -3,7 +3,7 @@ let
   name = "EdgeFlow";
   repo =  pkgs.fetchFromGitHub {
     owner = "BenjaminSauder";
-    repo = "${name}";
+    repo = "EdgeFlow";
     rev = "9d8f6918f26b33c8627f51af7f38cd26a44802d8";
     sha256 = "0kyb7m6rbvcwablk07jpdvpvvc19lknvwfb0ansywlcizfqw5q1b";
   };
