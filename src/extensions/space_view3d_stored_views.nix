@@ -4,7 +4,7 @@ let
   repo =  pkgs.fetchgit {
     url = "https://projects.blender.org/extensions/space_view3d_stored_views.git";
     rev = "436d7860894b4d0504576f42d5a91f6d71983c94";
-    sha256 = "436d7860894b4d0504576f42d5a91f6d71983c94";
+    sha256 = "0brq8ipin4m0l530cm22ib7cghcnqslrrjmlivwwnr1fr57rzbd5";
   };
   package = pkgs.runCommand "blender-extension-${name}" {} ''
     mkdir -p $out
