@@ -25,6 +25,7 @@ programs.blender = {
     ];
 }
 ```
+## How it works
+In essence this flake is just a wrapper for installing blender extensions into `~/.config/blender/<version>/extensions/user_default`. This directory is used for extensions downloaded outside of [Blenders extension repository](https://extensions.blender.org/add-ons/). These extensions are then enabled by running a python script with blender running in the background during home-manager automation. This might make activation time a bit longer due to python, but I haven't noticed any difference yet.
 ## Supported extensions
-
 - Most extensions from [here](https://projects.blender.org/extensions) (Excluding themes)
