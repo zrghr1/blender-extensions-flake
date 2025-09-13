@@ -4,7 +4,7 @@ let
   repo =  pkgs.fetchgit {
     url = "https://projects.blender.org/extensions/real_snow.git";
     rev = "bc82dc67a2043ccb329dc8d56b0eb2430090c104";
-    sha256 = "bc82dc67a2043ccb329dc8d56b0eb2430090c104";
+    sha256 = "18azdi46qz6x8rz1nwrvfhn8pay092z0rq3xrx768ksfam8jk408";
   };
   package = pkgs.runCommand "blender-extension-${name}" {} ''
     mkdir -p $out
