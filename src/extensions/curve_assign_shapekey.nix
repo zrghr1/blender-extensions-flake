@@ -4,7 +4,7 @@ let
   repo =  pkgs.fetchgit {
     url = "https://projects.blender.org/extensions/curve_assign_shapekey.git";
     rev = "98254d9b3954f1f6100f4fef22a99f2f32029032";
-    sha256 = "98254d9b3954f1f6100f4fef22a99f2f32029032";
+    sha256 = "0q65iiiiixpk2bgbl30msc31q6xnyk4d973lk3wfwjhjna1lj83p";
   };
   package = pkgs.runCommand "blender-extension-${name}" {} ''
     mkdir -p $out
