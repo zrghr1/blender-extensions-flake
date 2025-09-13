@@ -4,7 +4,7 @@ let
   repo =  pkgs.fetchgit {
     url = "https://projects.blender.org/extensions/lighting_dynamic_sky.git";
     rev = "99616b66f6dcc87b5148f78df5e4cbd8bcd3947d";
-    sha256 = "99616b66f6dcc87b5148f78df5e4cbd8bcd3947d";
+    sha256 = "1dia8xxpl2pavl5rvnr1xxid523kkvm3d9glz4l6xzwmgb1fpj65";
   };
   package = pkgs.runCommand "blender-extension-${name}" {} ''
     mkdir -p $out
