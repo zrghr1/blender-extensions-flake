@@ -4,7 +4,7 @@ let
   repo =  pkgs.fetchgit {
     url = "https://projects.blender.org/extensions/ant_landscape.git";
     rev = "4cdcc8374651724a149ee38b2124ae377c0de72c";
-    sha256 = "4cdcc8374651724a149ee38b2124ae377c0de72c";
+    sha256 = "1nrzr2sha774v22l27ss4q306gq9gv5jmcjiib0kql0idryi2kwz";
   };
   package = pkgs.runCommand "blender-extension-${name}" {} ''
     mkdir -p $out
