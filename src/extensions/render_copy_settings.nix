@@ -4,7 +4,7 @@ let
   repo =  pkgs.fetchgit {
     url = "https://projects.blender.org/extensions/render_copy_settings.git";
     rev = "db8265d23cd3fdc484a2546a8612d8354af92742";
-    sha256 = "db8265d23cd3fdc484a2546a8612d8354af92742";
+    sha256 = "0damyxwy41bkyb6p1wfak73460jgi1dij873z81w5rjf87cl8in9";
   };
   package = pkgs.runCommand "blender-extension-${name}" {} ''
     mkdir -p $out
