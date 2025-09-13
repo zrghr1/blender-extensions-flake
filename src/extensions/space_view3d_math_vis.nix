@@ -4,7 +4,7 @@ let
   repo =  pkgs.fetchgit {
     url = "https://projects.blender.org/extensions/space_view3d_math_vis.git";
     rev = "cd81f3d09ba6fa4d446a11afeb4a63ae7a4917f8";
-    sha256 = "cd81f3d09ba6fa4d446a11afeb4a63ae7a4917f8";
+    sha256 = "0zirhpffm8yvvgndrw0g5rk7852ccy8d6zrvr0jj17hblipf87d5";
   };
   package = pkgs.runCommand "blender-extension-${name}" {} ''
     mkdir -p $out
