@@ -4,7 +4,7 @@ let
   repo =  pkgs.fetchgit {
     url = "https://projects.blender.org/extensions/amaranth.git";
     rev = "f3dcf92d365f34cd9fdb09763fc2edf1d091107d";
-    sha256 = "f3dcf92d365f34cd9fdb09763fc2edf1d091107d";
+    sha256 = "15f346nhq3mfywqa9r3jx06jnk516k62g3li6njg08ip5kx86y10";
   };
   package = pkgs.runCommand "blender-extension-${name}" {} ''
     mkdir -p $out
