@@ -4,7 +4,7 @@ let
   repo =  pkgs.fetchgit {
     url = "https://projects.blender.org/extensions/object_edit_linked.git";
     rev = "734ceb379be60482c592fee1109e953f666a32c4";
-    sha256 = "734ceb379be60482c592fee1109e953f666a32c4";
+    sha256 = "0zfxaqfch7d9nbqp5cdz4jzcrvz8c6w70nsksfa9mcgijs90r8g8";
   };
   package = pkgs.runCommand "blender-extension-${name}" {} ''
     mkdir -p $out
