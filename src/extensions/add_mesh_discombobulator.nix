@@ -4,7 +4,7 @@ let
   repo =  pkgs.fetchgit {
     url = "https://projects.blender.org/extensions/add_mesh_discombobulator.git";
     rev = "d81aa601f3885d17436608f3c5be7c14bc77cfcc";
-    sha256 = "d81aa601f3885d17436608f3c5be7c14bc77cfcc";
+    sha256 = "0n4vkq3j5mz08amlxiz2mrzchy6mgd11prgpzxfiqcdbx2l7qlh3";
   };
   package = pkgs.runCommand "blender-extension-${name}" {} ''
     mkdir -p $out
