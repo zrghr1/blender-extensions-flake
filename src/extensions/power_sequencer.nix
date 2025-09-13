@@ -4,7 +4,7 @@ let
   repo =  pkgs.fetchgit {
     url = "https://projects.blender.org/extensions/power_sequencer.git";
     rev = "d67aeb2c170af7addda99c57e06da06313e5f8c9";
-    sha256 = "d67aeb2c170af7addda99c57e06da06313e5f8c9";
+    sha256 = "0wjgpy0phkchhmischpkyf6xxpzdf1w29ifn09qgvmhy6wvfiki9";
   };
   package = pkgs.runCommand "blender-extension-${name}" {} ''
     mkdir -p $out
