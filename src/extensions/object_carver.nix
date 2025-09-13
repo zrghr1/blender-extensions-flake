@@ -4,7 +4,7 @@ let
   repo =  pkgs.fetchgit {
     url = "https://projects.blender.org/extensions/object_carver.git";
     rev = "8b14a8f931a6e5236950ea71e60da69e1ecdd8a7";
-    sha256 = "8b14a8f931a6e5236950ea71e60da69e1ecdd8a7";
+    sha256 = "112sz0dm5jbp6v4qzbxl3xlwhgad4hjs4sszq8i56cz318zvxs9h";
   };
   package = pkgs.runCommand "blender-extension-${name}" {} ''
     mkdir -p $out
