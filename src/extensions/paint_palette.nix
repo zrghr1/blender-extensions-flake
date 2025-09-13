@@ -4,7 +4,7 @@ let
   repo =  pkgs.fetchgit {
     url = "https://projects.blender.org/extensions/paint_palette.git";
     rev = "ec48daa9955b994dae2f458db36ae53d9fba00e7";
-    sha256 = "ec48daa9955b994dae2f458db36ae53d9fba00e7";
+    sha256 = "0nchs2m7b2gh9q0c1xfbrvpd49cc5nd91zbv5hcf177cw1hgpsvm";
   };
   package = pkgs.runCommand "blender-extension-${name}" {} ''
     mkdir -p $out
