@@ -4,7 +4,7 @@ let
   repo =  pkgs.fetchgit {
     url = "https://projects.blender.org/extensions/action_to_scene_range.git";
     rev = "f638503e4a6a9a9d58f247aae1617f5ce0b24fcf";
-    sha256 = "f638503e4a6a9a9d58f247aae1617f5ce0b24fcf";
+    sha256 = "1yb38qyjq9clbi7dv7f606pa7pqyavvljg88rxlpmpywgzwpx69z";
   };
   package = pkgs.runCommand "blender-extension-${name}" {} ''
     mkdir -p $out
