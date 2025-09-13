@@ -4,7 +4,7 @@ let
   repo =  pkgs.fetchgit {
     url = "https://projects.blender.org/extensions/io_anim_camera.git";
     rev = "631049b1ec6d944359cc59760d586877575c6fa3";
-    sha256 = "631049b1ec6d944359cc59760d586877575c6fa3";
+    sha256 = "009y4m47nrbcd8nj31d2zin6mqxn6dhvs6y5dsri2yldzsyrhacw";
   };
   package = pkgs.runCommand "blender-extension-${name}" {} ''
     mkdir -p $out
