@@ -1,6 +1,6 @@
 { lib, pkgs }:
 let
-  name = "mesh_looptools";
+  name = "io_scene_3ds";
   version = "2.9.0";
   repo =  pkgs.fetchgit {
     url = "https://projects.blender.org/extensions/io_scene_3ds.git";
