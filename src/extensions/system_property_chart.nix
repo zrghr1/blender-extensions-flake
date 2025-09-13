@@ -4,7 +4,7 @@ let
   repo =  pkgs.fetchgit {
     url = "https://projects.blender.org/extensions/system_property_chart.git";
     rev = "88ba0ca8b589844c25ffd1137ec94c43be41a14b";
-    sha256 = "88ba0ca8b589844c25ffd1137ec94c43be41a14b";
+    sha256 = "1rwfv5i29nf2jwq6a85kif0br9nx7r5a4kfm64aj3gj1xwhz7rxi";
   };
   package = pkgs.runCommand "blender-extension-${name}" {} ''
     mkdir -p $out
