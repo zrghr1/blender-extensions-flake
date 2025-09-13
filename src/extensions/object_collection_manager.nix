@@ -1,7 +1,6 @@
 { lib, pkgs }:
 let
   name = "object_collection_manager";
-  version = "2.9.0";
   repo =  pkgs.fetchgit {
     url = "https://projects.blender.org/extensions/object_collection_manager.git";
     rev = "fd55d530c92b9a4f270533ee8534fd31215949a5";
