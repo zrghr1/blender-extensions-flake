@@ -4,7 +4,7 @@ let
   repo =  pkgs.fetchgit {
     url = "https://projects.blender.org/extensions/io_import_palette.git";
     rev = "6c7465f474be61058edcd67dd7eb6d3574df06bf";
-    sha256 = "6c7465f474be61058edcd67dd7eb6d3574df06bf";
+    sha256 = "1xklsrg5k0wznrlb26cdzkxcygj223knc0wp3rs2cgkx2i7qdqb4";
   };
   package = pkgs.runCommand "blender-extension-${name}" {} ''
     mkdir -p $out
