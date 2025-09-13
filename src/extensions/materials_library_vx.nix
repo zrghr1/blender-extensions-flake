@@ -4,7 +4,7 @@ let
   repo =  pkgs.fetchgit {
     url = "https://projects.blender.org/extensions/materials_library_vx.git";
     rev = "4331d6043e431cf0772842b003c04114c9637d8e";
-    sha256 = "4331d6043e431cf0772842b003c04114c9637d8e";
+    sha256 = "1gdk1mq1nfq2fzahjczc8616ihx9njaxfrjsp3ljy3zv83gj944z";
   };
   package = pkgs.runCommand "blender-extension-${name}" {} ''
     mkdir -p $out
