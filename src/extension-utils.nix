@@ -1,20 +1,29 @@
 { lib, pkgs }:
 let
-  extensionsPath = ./extensions;
+  officialPath = ./extensions/official;
+  unofficialPath = ./extensions/unofficial;
 
-  # All .nix files in extensionsPath
-  extensionFiles = builtins.readDir extensionsPath;
+  officialFiles = lib.mapAttrs' ( name: type:
+    lib.nameValuePair "${officialPath}/${name}" type
+  ) builtins.readDir officialPath;
+
+  unofficialFiles = lib.mapAttrs' ( name: type:
+    lib.nameValuePair "${unofficialPath}/${name}" type
+  ) builtins.readDir unofficialPath;
+
+  extensionFiles = officialFiles // unofficialFiles;
 
   # Import and register extensions 
   registry = 
     lib.mapAttrs'
-      (filename: _type:
+      (filepath: _type:
         let
+          filename = baseNameOf filepath;
           name = lib.removeSuffix ".nix" filename;
         in
-          lib.nameValuePair name (import (extensionsPath + "/${filename}") { inherit lib pkgs; })
+          lib.nameValuePair (import filepath {inherit lib pkgs;})
       )
-      (lib.filterAttrs (name: type: type == "regular" && lib.hasSuffix ".nix" name) extensionFiles);
+      (lib.filterAttrs (path: type: type == "regular" && lib.hasSuffix ".nix" path) extensionFiles);
 
   resolveExtension = extension:
     if lib.isString extension then

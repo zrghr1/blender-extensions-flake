@@ -2,9 +2,7 @@
 This flake provides support for blenders extensions in home-manager.
 
 > [!WARNING]
-> During home-manager activation this module runs `blender --background --factory-startup --python {provided script to enable extensions}`.
-> This means that your preferences will be reset. I'm working on figuring out how to efficiently make Blenders preferences declarative.
-> In the mean time you can disable `programs.blender.autoEnableExtensions` to have extensions be disabled by default.
+> During home-manager activation this module runs `blender --factory-startup` to run a python script to enable extensions. This resets your preferences in blender. If you want to avoid this, you can disable `programs.blender.autoEnableExtensions`.
 ## Usage
 Add this to your flake inputs
 ```nix
