@@ -4,7 +4,7 @@ let
   repo =  pkgs.fetchgit {
     url = "https://projects.blender.org/extensions/space_view3d_spacebar_menu.git";
     rev = "8d48fce359af6a83fe4ef72d6566252c7071f31c";
-    sha256 = "8d48fce359af6a83fe4ef72d6566252c7071f31c";
+    sha256 = "1gnyf3ls08k0cm9svqpk4hd3gf49xdaq7gsj0jj1md36jy4sqzgy";
   };
   package = pkgs.runCommand "blender-extension-${name}" {} ''
     mkdir -p $out
