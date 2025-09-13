@@ -4,7 +4,7 @@ let
   repo =  pkgs.fetchgit {
     url = "https://projects.blender.org/extensions/bone_selection_sets.git";
     rev = "27b42e9aae0901c758275967ac8a92bff39e950f";
-    sha256 = "27b42e9aae0901c758275967ac8a92bff39e950f";
+    sha256 = "1qj8kcp36k36gm8ls6pfkpvn9v4z8i19bkb7hh6layrq7b9vpsw5";
   };
   package = pkgs.runCommand "blender-extension-${name}" {} ''
     mkdir -p $out
