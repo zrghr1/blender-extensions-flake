@@ -4,7 +4,7 @@ let
   repo =  pkgs.fetchgit {
     url = "https://projects.blender.org/extensions/io_mesh_atomic.git";
     rev = "07d61acf41780f2c211af8cc6e83694ffed2fb18";
-    sha256 = "07d61acf41780f2c211af8cc6e83694ffed2fb18";
+    sha256 = "1nx18xhmbxss79waw0hm13nrvkydy2zxmazxvhkpcznckzzrg4s9";
   };
   package = pkgs.runCommand "blender-extension-${name}" {} ''
     mkdir -p $out
