@@ -2,7 +2,7 @@
 let
   name = "io_scene_x3d";
   repo =  pkgs.fetchgit {
-    url = "https://projects.blender.org/extensions/${name}.git";
+    url = "https://projects.blender.org/extensions/io_scene_3ds.git";
     rev = "e956bd8beaa6ac33d7e7efb7419f15b9291c4dba";
     sha256 = "e956bd8beaa6ac33d7e7efb7419f15b9291c4dba";
   };

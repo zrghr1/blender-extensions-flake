@@ -2,7 +2,7 @@
 let
   name = "object_fracture_cell";
   repo =  pkgs.fetchgit {
-    url = "https://projects.blender.org/extensions/${name}.git";
+    url = "https://projects.blender.org/extensions/object_fracture_cell.git";
     rev = "4500a267f868bc99c35207930c9d2ee6e8f314c6";
     sha256 = "02q27926cc43jfl86r2pns9jyrnwp3db0p1i06kxyl2ndndhlcsj";
   };

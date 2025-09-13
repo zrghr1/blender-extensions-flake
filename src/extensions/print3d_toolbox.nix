@@ -2,7 +2,7 @@
 let
   name = "print3d_toolbox";
   repo =  pkgs.fetchgit {
-    url = "https://projects.blender.org/extensions/${name}.git";
+    url = "https://projects.blender.org/extensions/print3d_toolbox.git";
     rev = "ec7914d9c5b3222806a54a2bb32ea1619659654f";
     sha256 = "ec7914d9c5b3222806a54a2bb32ea1619659654f";
   };

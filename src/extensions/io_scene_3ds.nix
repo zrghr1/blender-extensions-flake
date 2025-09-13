@@ -3,7 +3,7 @@ let
   name = "io_scene_3ds";
   version = "2.9.0";
   repo =  pkgs.fetchgit {
-    url = "https://projects.blender.org/extensions/${name}.git";
+    url = "https://projects.blender.org/extensions/io_scene_3ds.git";
     rev = "189812454e59ca066caa8193043250162626f5be";
     sha256 = "0yx5ck1rnri20d1s40f0c6n1gd26zpdxbx30sxnvd6s5g2sy94hd";
   };

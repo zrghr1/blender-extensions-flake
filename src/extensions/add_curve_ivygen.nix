@@ -2,7 +2,7 @@
 let
   name = "add_curve_ivygen";
   repo =  pkgs.fetchgit {
-    url = "https://projects.blender.org/extensions/${name}.git";
+    url = "https://projects.blender.org/extensions/add_curve_ivygen.git";
     rev = "dd2fdea1f6189c5c0fef4603fb9782c4775a7276";
     sha256 = "dd2fdea1f6189c5c0fef4603fb9782c4775a7276";
   };

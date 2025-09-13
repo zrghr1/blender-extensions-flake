@@ -2,7 +2,7 @@
 let
   name = "space_view3d_pie_menus";
   repo =  pkgs.fetchgit {
-    url = "https://projects.blender.org/extensions/${name}.git";
+    url = "https://projects.blender.org/extensions/space_view3d_pie_menus.git";
     rev = "8186983f1cbce8347d496ce6436a577ac8cf91e8";
     sha256 = "0i564pvn0d0jsqcij58pi6zn4flnfd1q2c0gcds1nqnmlzmzkyr0";
   };

@@ -2,7 +2,7 @@
 let
   name = "render_povray";
   repo =  pkgs.fetchgit {
-    url = "https://projects.blender.org/extensions/${name}.git";
+    url = "https://projects.blender.org/extensions/render_povray.git";
     rev = "3ade27345478bc96191e74f5827b45fe746d06f1";
     sha256 = "1vsp62vfax8h9l32672yc5b762z1zdn3a4miblp3hxiay11543wv";
   };

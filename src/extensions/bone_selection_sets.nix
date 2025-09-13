@@ -2,7 +2,7 @@
 let
   name = "bone_selection_sets";
   repo =  pkgs.fetchgit {
-    url = "https://projects.blender.org/extensions/${name}.git";
+    url = "https://projects.blender.org/extensions/bone_selection_sets.git";
     rev = "27b42e9aae0901c758275967ac8a92bff39e950f";
     sha256 = "27b42e9aae0901c758275967ac8a92bff39e950f";
   };

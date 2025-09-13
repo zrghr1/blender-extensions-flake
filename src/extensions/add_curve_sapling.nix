@@ -2,7 +2,7 @@
 let
   name = "add_curve_sapling";
   repo =  pkgs.fetchgit {
-    url = "https://projects.blender.org/extensions/${name}.git";
+    url = "https://projects.blender.org/extensions/add_curve_sapling.git";
     rev = "e101d5bb17564221453c711b7d4f420346b4f57d";
     sha256 = "e101d5bb17564221453c711b7d4f420346b4f57d";
   };

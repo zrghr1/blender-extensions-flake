@@ -2,7 +2,7 @@
 let
   name = "amaranth";
   repo =  pkgs.fetchgit {
-    url = "https://projects.blender.org/extensions/${name}.git";
+    url = "https://projects.blender.org/extensions/amaranth.git";
     rev = "f3dcf92d365f34cd9fdb09763fc2edf1d091107d";
     sha256 = "f3dcf92d365f34cd9fdb09763fc2edf1d091107d";
   };

@@ -2,7 +2,7 @@
 let
   name = "development_icon_get";
   repo =  pkgs.fetchgit {
-    url = "https://projects.blender.org/extensions/${name}.git";
+    url = "https://projects.blender.org/extensions/development_icon_get.git";
     rev = "12fe30547c548f35b2900f45fe631a01e0883707";
     sha256 = "12fe30547c548f35b2900f45fe631a01e0883707";
   };

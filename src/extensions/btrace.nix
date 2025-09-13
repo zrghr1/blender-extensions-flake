@@ -2,7 +2,7 @@
 let
   name = "btrace";
   repo =  pkgs.fetchgit {
-    url = "https://projects.blender.org/extensions/${name}.git";
+    url = "https://projects.blender.org/extensions/btrace.git";
     rev = "65887b999a9a6a153c341120676883fefb76e1d9";
     sha256 = "65887b999a9a6a153c341120676883fefb76e1d9";
   };

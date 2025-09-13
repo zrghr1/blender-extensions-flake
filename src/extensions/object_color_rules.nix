@@ -2,7 +2,7 @@
 let
   name = "object_color_rules";
   repo =  pkgs.fetchgit {
-    url = "https://projects.blender.org/extensions/${name}.git";
+    url = "https://projects.blender.org/extensions/object_color_rules.git";
     rev = "562b1a349d78b0a8677b1681d1af4d00e6e36c78";
     sha256 = "562b1a349d78b0a8677b1681d1af4d00e6e36c78";
   };

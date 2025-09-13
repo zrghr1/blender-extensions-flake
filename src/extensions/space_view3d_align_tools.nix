@@ -2,7 +2,7 @@
 let
   name = "space_view3d_align_tools";
   repo =  pkgs.fetchgit {
-    url = "https://projects.blender.org/extensions/${name}.git";
+    url = "https://projects.blender.org/extensions/space_view3d_align_tools.git";
     rev = "f911bd84260292f3e578b2df715fceb75141efb4";
     sha256 = "f911bd84260292f3e578b2df715fceb75141efb4";
   };
