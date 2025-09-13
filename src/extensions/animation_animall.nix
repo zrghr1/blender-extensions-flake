@@ -4,7 +4,7 @@ let
   repo =  pkgs.fetchgit {
     url = "https://projects.blender.org/extensions/animation_animall.git";
     rev = "97a8e2a72b28098ffc90e18755f3fa293b7b0042";
-    sha256 = "97a8e2a72b28098ffc90e18755f3fa293b7b0042";
+    sha256 = "1rzda56dwy9pxfhblbq3lk7nnv6h8vy1ykwn4ff6mqifi97vkzis";
   };
   package = pkgs.runCommand "blender-extension-${name}" {} ''
     mkdir -p $out
