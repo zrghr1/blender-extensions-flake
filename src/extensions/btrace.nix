@@ -4,7 +4,7 @@ let
   repo =  pkgs.fetchgit {
     url = "https://projects.blender.org/extensions/btrace.git";
     rev = "65887b999a9a6a153c341120676883fefb76e1d9";
-    sha256 = "65887b999a9a6a153c341120676883fefb76e1d9";
+    sha256 = "0y2l4hbfdhj42m7jwpkd3ymwd45nlz6519l3hmgimwk1wl04j2w1";
   };
   package = pkgs.runCommand "blender-extension-${name}" {} ''
     mkdir -p $out
