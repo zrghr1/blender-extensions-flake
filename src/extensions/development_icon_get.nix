@@ -4,7 +4,7 @@ let
   repo =  pkgs.fetchgit {
     url = "https://projects.blender.org/extensions/development_icon_get.git";
     rev = "12fe30547c548f35b2900f45fe631a01e0883707";
-    sha256 = "12fe30547c548f35b2900f45fe631a01e0883707";
+    sha256 = "0vbkjp9yp8r8h34cdmr7112dih4gsgk3jjvihp2d1i4paqkqdgbk";
   };
   package = pkgs.runCommand "blender-extension-${name}" {} ''
     mkdir -p $out
