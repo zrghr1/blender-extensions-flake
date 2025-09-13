@@ -1,5 +1,5 @@
 # Blender with Extension support
-This flake provides support for blender's extensions in home-manager. Do note that this flake currently only supports a few extensions, but I'll add more them bit by bit
+This flake provides support for blenders extensions in home-manager.
 
 ## Usage
 Add this to your flake inputs
@@ -19,8 +19,12 @@ programs.blender = {
     enable = true;
     extensions = [
         # You can add any of the built in extensions of this flake like this
+        # The name of each extension is the name of its repository
         "mesh_looptools"
         "greasepencil_tools"
     ];
 }
 ```
+## Supported extensions
+
+- Most extensions from [here](https://projects.blender.org/extensions) (Excluding themes)
