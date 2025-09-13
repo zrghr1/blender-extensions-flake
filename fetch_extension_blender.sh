@@ -22,7 +22,6 @@ NIX_TEMPLATE=$(cat << 'EOF'
 { lib, pkgs }:
 let
   name = "@@NAME@@";
-  version = "0.6.0";
   repo =  pkgs.fetchgit {
     url = "https://projects.blender.org/extensions/${name}.git";
     rev = "@@FULLREV@@";
