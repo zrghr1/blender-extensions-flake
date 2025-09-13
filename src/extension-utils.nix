@@ -8,7 +8,7 @@ let
   unofficialFiles = builtins.readDir unofficialPath;
 
   # Import and register extensions 
-  registry = 
+  officialRegistry = 
     lib.mapAttrs'
       (filename: _type:
         let
@@ -17,6 +17,18 @@ let
           lib.nameValuePair name (import (officialPath + "/${filename}") { inherit lib pkgs; })
       )
       (lib.filterAttrs (name: type: type == "regular" && lib.hasSuffix ".nix" name) officialFiles);
+
+  unofficialRegistry = 
+    lib.mapAttrs'
+      (filename: _type:
+        let
+          name = lib.removeSuffix ".nix" filename;
+        in
+          lib.nameValuePair name (import (unofficialPath + "/${filename}") { inherit lib pkgs; })
+      )
+      (lib.filterAttrs (name: type: type == "regular" && lib.hasSuffix ".nix" name) unofficialFiles);
+
+  registry = officialRegistry // unofficialRegistry;
 
   resolveExtension = extension:
     if lib.isString extension then
