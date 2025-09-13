@@ -4,7 +4,7 @@ let
   repo =  pkgs.fetchgit {
     url = "https://projects.blender.org/extensions/object_scatter.git";
     rev = "886bd21c392fafe3908fdd6988535f3657e84fee";
-    sha256 = "886bd21c392fafe3908fdd6988535f3657e84fee";
+    sha256 = "16lzhp2s8f03fdy7h9h59wadnhwps4203849wnpm03kgpqv0760r";
   };
   package = pkgs.runCommand "blender-extension-${name}" {} ''
     mkdir -p $out
