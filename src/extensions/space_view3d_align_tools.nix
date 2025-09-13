@@ -4,7 +4,7 @@ let
   repo =  pkgs.fetchgit {
     url = "https://projects.blender.org/extensions/space_view3d_align_tools.git";
     rev = "f911bd84260292f3e578b2df715fceb75141efb4";
-    sha256 = "f911bd84260292f3e578b2df715fceb75141efb4";
+    sha256 = "0rsmbv4kpivnmxagax2qwj8gmw3pg0dy3jysa33x0z7bq23dw772";
   };
   package = pkgs.runCommand "blender-extension-${name}" {} ''
     mkdir -p $out
