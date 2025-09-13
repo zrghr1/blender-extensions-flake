@@ -4,7 +4,7 @@ let
   repo =  pkgs.fetchgit {
     url = "https://projects.blender.org/extensions/io_import_BrushSet.git";
     rev = "f4e9d97039c688e09fc9137c664321512d400b45";
-    sha256 = "f4e9d97039c688e09fc9137c664321512d400b45";
+    sha256 = "1fdbr4grppjayamikl4irac3w503a1i4rqxqs18wv4crw1dwiwab";
   };
   package = pkgs.runCommand "blender-extension-${name}" {} ''
     mkdir -p $out
