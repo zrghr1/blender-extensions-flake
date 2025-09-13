@@ -4,7 +4,7 @@ let
   repo =  pkgs.fetchgit {
     url = "https://projects.blender.org/extensions/storypencil.git";
     rev = "a4bd61bfc448ec28ecf7b3aefd6dff77d4c54bf6";
-    sha256 = "a4bd61bfc448ec28ecf7b3aefd6dff77d4c54bf6";
+    sha256 = "0wxx9x4ib4h4hk6d4rlm5kzg5ssi7yhsxnff3pxdi3pn5mfp7wyg";
   };
   package = pkgs.runCommand "blender-extension-${name}" {} ''
     mkdir -p $out
