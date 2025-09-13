@@ -4,7 +4,7 @@ let
   repo =  pkgs.fetchgit {
     url = "https://projects.blender.org/extensions/object_color_rules.git";
     rev = "562b1a349d78b0a8677b1681d1af4d00e6e36c78";
-    sha256 = "562b1a349d78b0a8677b1681d1af4d00e6e36c78";
+    sha256 = "0vi40vigdhvglwq555g20x04pasa8b6h7i3a266qs7dhdr4p72x7";
   };
   package = pkgs.runCommand "blender-extension-${name}" {} ''
     mkdir -p $out
