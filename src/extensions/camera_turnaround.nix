@@ -4,7 +4,7 @@ let
   repo =  pkgs.fetchgit {
     url = "https://projects.blender.org/extensions/camera_turnaround.git";
     rev = "0a0f13b93e6fb9f2cd6838dff842f63c1fcc7c6b";
-    sha256 = "0a0f13b93e6fb9f2cd6838dff842f63c1fcc7c6b";
+    sha256 = "0h0h24ijcp8pvb3q15dmr4d4cng26n8zfxyp9fsd8gqmfymxcxvh";
   };
   package = pkgs.runCommand "blender-extension-${name}" {} ''
     mkdir -p $out
