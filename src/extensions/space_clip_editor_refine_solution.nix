@@ -4,7 +4,7 @@ let
   repo =  pkgs.fetchgit {
     url = "https://projects.blender.org/extensions/space_clip_editor_refine_solution.git";
     rev = "0a0339b2f363547b36c4e51bc4c3ffdf3ddd2ee8";
-    sha256 = "0a0339b2f363547b36c4e51bc4c3ffdf3ddd2ee8";
+    sha256 = "0w9r578madbgaz9m9p12w4p6fij8bdvn1i09xdw96a0j4sq6m5mq";
   };
   package = pkgs.runCommand "blender-extension-${name}" {} ''
     mkdir -p $out
