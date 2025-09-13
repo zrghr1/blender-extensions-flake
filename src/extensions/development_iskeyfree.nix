@@ -4,7 +4,7 @@ let
   repo =  pkgs.fetchgit {
     url = "https://projects.blender.org/extensions/development_iskeyfree.git";
     rev = "fc6e5727be96de2758ae809b045c2dd0bd55180b";
-    sha256 = "fc6e5727be96de2758ae809b045c2dd0bd55180b";
+    sha256 = "03sqi5p0w2j4djmpgfpq2i5y9jki4ffaig2qy368mw4lc88yw5gq";
   };
   package = pkgs.runCommand "blender-extension-${name}" {} ''
     mkdir -p $out
