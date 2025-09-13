@@ -4,7 +4,7 @@ let
   repo =  pkgs.fetchgit {
     url = "https://projects.blender.org/extensions/system_demo_mode.git";
     rev = "407fa11aafbd26cf58192343535b2f4d5b3f6225";
-    sha256 = "407fa11aafbd26cf58192343535b2f4d5b3f6225";
+    sha256 = "0y80pv0z0hxb5kjwb1flbscmmgx6rmcma40syx2jjwxfpqdk24mn";
   };
   package = pkgs.runCommand "blender-extension-${name}" {} ''
     mkdir -p $out
