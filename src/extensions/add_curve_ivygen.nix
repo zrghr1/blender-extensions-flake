@@ -4,7 +4,7 @@ let
   repo =  pkgs.fetchgit {
     url = "https://projects.blender.org/extensions/add_curve_ivygen.git";
     rev = "dd2fdea1f6189c5c0fef4603fb9782c4775a7276";
-    sha256 = "dd2fdea1f6189c5c0fef4603fb9782c4775a7276";
+    sha256 = "1dvncj79623wa0vdpjry4q7ywil0n2wk2jghzyhl9m11rrzhzccc";
   };
   package = pkgs.runCommand "blender-extension-${name}" {} ''
     mkdir -p $out
