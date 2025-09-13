@@ -4,7 +4,7 @@ let
   repo =  pkgs.fetchgit {
     url = "https://projects.blender.org/extensions/node_presets.git";
     rev = "e953e6e1aa2a783e7f848b8941bc56bbe04fd12c";
-    sha256 = "e953e6e1aa2a783e7f848b8941bc56bbe04fd12c";
+    sha256 = "0dg1dwwdgkn8mq8jhm48m52yzv5h3q6hg466vbw6c7rqn81k4c7g";
   };
   package = pkgs.runCommand "blender-extension-${name}" {} ''
     mkdir -p $out
